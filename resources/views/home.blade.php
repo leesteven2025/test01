@@ -1,23 +1,10 @@
-@extends('layouts.app')
+<!-- resources/views/home.blade.php -->
+@extends('layouts.main')
+
+@section('title', '首頁')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <h1>歡迎來到首頁</h1>
+    <p>這是一個 Blade Layouts 的範例。</p>
 @endsection
+
