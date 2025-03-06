@@ -1,6 +1,25 @@
 @extends('layouts.main')
 
 @section('content')
+<style>
+        .card-body {
+            font-size: 25px; /* 調整整個表單內的字型大小 */
+        }
+
+        .card-header {
+            font-size: 50px; /* 調整表單標題的字型大小 */
+        }
+        main {
++           height: 100vh;                /* 設定 main 填滿整個視窗高度 */               /* 使用 Flexbox */
+            justify-content: center;       /* 水平方向置中 */
+            align-items: center;           /* 垂直方向置中 */
+            text-align: center;           /* 文字居中 */
+        }
+        .card {
+        width: 100%; /* 確保卡片可以擴展到可用空間 */
+        max-width: 500px; /* 限制最大寬度，避免太大 */
+        }   
+    </style>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
