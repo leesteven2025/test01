@@ -1,6 +1,15 @@
 @extends('layouts.main')
 
 @section('content')
+    <style>
+        .card-body {
+            font-size: 25px; /* 調整整個表單內的字型大小 */
+        }
+
+        .card-header {
+            font-size: 25px; /* 調整表單標題的字型大小 */
+        }
+    </style>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -8,6 +17,7 @@
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
+                    
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
