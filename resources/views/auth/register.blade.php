@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.main')
 
 @section('content')
 <div class="container">
@@ -62,7 +62,7 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
-                        
+
                         <div class="row mb-3">
                              <label for="address" class="col-md-4 text-end">{{ __('Address') }}</label>
                                 <div class="col-md-6">
