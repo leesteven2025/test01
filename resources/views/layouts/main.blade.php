@@ -31,11 +31,11 @@
         main {
             flex: 1;
             display: flex;
-            justify-content: center; /* 水平置中 */
+            
             align-items: center;     /* 垂直置中 */
             flex-direction: column;  /* 使內容垂直排列 */
-            height: 100%;            /* 確保填滿整個main區域 */
-            text-align: center;      /* 文字居中 */
+            
+           
         }
 
         /* 導航列設計 */
