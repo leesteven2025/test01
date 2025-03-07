@@ -120,11 +120,21 @@
 <body>
     <!-- 導航列 -->
     <header>
-        <nav>
-            <a href="{{ url('/') }}">🏠 首頁</a>
-            <a href="{{ url('/about') }}">📖 關於我們</a>
-            <a href="{{ url('/contact') }}">📞 聯絡我們</a>
-        </nav>
+    <nav style="display: flex; align-items: center; justify-content: center; width: 100%; position: relative;">
+    <!-- 中間選單 -->
+    <div style="display: flex; gap: 50px;">
+        <a href="{{ url('/') }}">🏠 首頁</a>
+        <a href="{{ url('/about') }}">📖 關於我們</a>
+        <a href="{{ url('/contact') }}">📞 聯絡我們</a>
+    </div>
+
+    <!-- 右側登入/註冊 (用 `position: absolute; right: 0;`) -->
+    <div style="position: absolute; right: 0; display: flex; gap: 10px;">
+        <a href="{{ url('/login') }}">登入</a>
+        <a href="{{ url('/register') }}">註冊</a>
+    </div>
+    </nav>
+
     </header>
 
     <!-- 主要內容 -->
