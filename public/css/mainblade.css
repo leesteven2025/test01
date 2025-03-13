@@ -1,0 +1,97 @@
+/* 全局樣式 */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #F8FAFC; /* 柔和的淺灰色背景 */
+}
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 導航列 */
+header {
+    background-color: rgb(105, 176, 241);
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.nav-links {
+    display: flex;
+    gap: 50px;
+}
+.auth-links {
+    display: flex;
+    gap: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: 0.3s ease-in-out;
+}
+nav a:hover {
+    background-color: rgb(128, 170, 233);
+    border-radius: 8px;
+}
+
+/* 頁尾 */
+footer {
+    background-color: #1F2937;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.footer-content div {
+    flex: 1;
+    text-align: center;
+}
+.footer-divider {
+    width: 80%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: auto;
+}
+.footer-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.footer-icons a:hover {
+    color: #60A5FA;
+}
+
+/* RWD 響應式設計 */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-content div {
+        text-align: center !important;
+        margin-bottom: 8px;
+    }
+}
