@@ -1,5 +1,5 @@
 @extends('layouts.main')
-
+@section('title', '登入頁面')
 @section('content')
     <style>
         .card-body {
