@@ -11,7 +11,7 @@
     
     <!-- Styles -->
     @vite(['resources/sass/app.scss'])
-    <link rel="stylesheet" href="{{ asset('css/mainblade.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/mainblade.css') }}?v={{ time() }}">
 
     <!-- Scripts -->
     @vite(['resources/js/app.js'])
