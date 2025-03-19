@@ -11,7 +11,7 @@
     
     <!-- Styles -->
     @vite(['resources/sass/app.scss'])
-    <link rel="stylesheet" href="{{ asset('css/mainblade.css') }}?v={{ time() }}">
+    @vite(['resources/css/mainblade.css'])
 
     <!-- Scripts -->
     @vite(['resources/js/app.js'])
@@ -21,9 +21,9 @@
     <header>
         <nav>
             <div class="nav-links">
-                <a href="{{ url('/') }}">🏠 首頁</a>
-                <a href="{{ url('/about') }}">📖 關於我們</a>
-                <a href="{{ url('/contact') }}">📞 聯絡我們</a>
+                <a href="{{ url('/') }}">首頁</a>
+                <a href="{{ url('/about') }}">關於我們</a>
+                <a href="{{ url('/contact') }}">聯絡我們</a>
             </div>
             <div class="auth-links">
                 @if (Auth::check())
