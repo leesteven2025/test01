@@ -7,6 +7,8 @@ use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
+use Encore\Admin\Layout\Content;
+
 
 class ProductController extends AdminController
 {
@@ -80,4 +82,13 @@ class ProductController extends AdminController
 
         return $form;
     }
+
+    public function index(Content $content)
+    {
+        return $content
+        ->header('商品管理')
+        ->description('管理所有賣場商品')
+        ->body($this->grid());
+    }
+    
 }
