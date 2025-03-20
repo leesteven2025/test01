@@ -6,6 +6,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title', config('app.name', 'Laravel'))</title>
 
+    <!-- Cool Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     
@@ -21,9 +24,9 @@
     <header>
         <nav>
             <div class="nav-links">
-                <a href="{{ url('/') }}">首頁</a>
-                <a href="{{ url('/about') }}">關於我們</a>
-                <a href="{{ url('/contact') }}">聯絡我們</a>
+                <a href="{{ url('/') }}"><i class="fa-solid fa-house"></i> 首頁</a>
+                <a href="{{ url('/about') }}"><i class="fa-solid fa-address-book"></i> 關於我們</a>
+                <a href="{{ url('/contact') }}"><i class="fa-solid fa-phone"></i> 聯絡我們</a>
             </div>
             <div class="auth-links">
                 @if (Auth::check())
