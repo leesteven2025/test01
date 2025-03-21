@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('image');//圖片路徑
             $table->boolean('on_sale')->default=true;
             $table->unsignedInteger('price');
-            $table->unsignedInteger('unitsold');
+            $table->unsignedInteger('unitsold')->default(0);
             $table->timestamps();
         });
     }
