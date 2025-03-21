@@ -73,11 +73,11 @@ class ProductController extends AdminController
     {
         $form = new Form(new Product());
 
-        $form->text('title', __('Title'));
+        $form->text('title', __('Title'))->rules('required');
         $form->textarea('description', __('Description'));
-        $form->image('image', __('Image'));
+        $form->image('image', __('Image'))->rules('required');
         $form->switch('on_sale', __('On sale'))->default(1);
-        $form->number('price', __('Price'));
+        $form->number('price', __('Price'))->rules('required|min:3');
         $form->number('unitsold', __('Unitsold'));
 
         return $form;
