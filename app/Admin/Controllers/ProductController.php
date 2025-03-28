@@ -90,5 +90,12 @@ class ProductController extends AdminController
         ->description('管理所有賣場商品')
         ->body($this->grid());
     }
+    public function edit($id, Content $content)
+    {
+        return $content
+        ->header('編輯商品')
+        ->description('可於此頁面修改商品內容')
+        ->body($this->form()->edit($id));
+    }
     
 }
