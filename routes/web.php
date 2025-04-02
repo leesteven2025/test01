@@ -37,6 +37,9 @@ Route::get('/test', function () {
     return view('welcome', $data);
 });
 
+
+Route::get('/product', [App\Http\Controllers\ProductController::class, 'index'])->name('product.index');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
