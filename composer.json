@@ -11,7 +11,7 @@
         "laravel-admin-ext/ckeditor": "^1.0",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
-        "laravel/tinker": "^2.8",
+        "laravel/tinker": "^2.10",
         "laravel/ui": "^4.6"
     },
     "require-dev": {
